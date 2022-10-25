@@ -206,8 +206,8 @@ main {
 }
 
 .card-info{
-    position: absolute;
-    top: 40rem;
+    position: relative;
+    bottom: 10rem;
     width: 75%;
     height: auto;
     display: flex;
