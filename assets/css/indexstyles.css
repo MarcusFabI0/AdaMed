@@ -207,7 +207,7 @@ main {
 
 .card-info{
     position: relative;
-    bottom: 10rem;
+    bottom: 5rem;
     width: 75%;
     height: auto;
     display: flex;
@@ -215,6 +215,7 @@ main {
     background-color: #ffffff;
     padding: 2rem 1rem;
     animation: goingUp 1s;
+    
 }
 
 .card-item{
@@ -227,6 +228,7 @@ main {
     color: #42474c;
     line-height: 22.4px;
     font-weight: 500;
+    align-items: center;
 
 }
 .card-img{
