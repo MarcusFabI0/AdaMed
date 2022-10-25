@@ -228,12 +228,13 @@ main {
     color: #42474c;
     line-height: 22.4px;
     font-weight: 500;
-    align-items: center;
-
 }
+
+
 .card-img{
     width: 300px;
     height: 200px;
+    align-self: center;
 }
 
 .card-item > h3{
@@ -250,6 +251,7 @@ main {
 .func{
     display: flex;
     justify-content: space-between;  
+
 }
 
 .hours{
