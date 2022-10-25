@@ -202,7 +202,9 @@ como aplicar borda na info
 /* -------------------- CSS DA MAIN --------------------*/
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    
 }
 
 .card-info{
@@ -215,7 +217,7 @@ main {
     background-color: #ffffff;
     padding: 2rem 1rem;
     animation: goingUp 1s;
-    
+    align-self: center;
 }
 
 .card-item{
@@ -285,3 +287,45 @@ main {
     height: 2rem;
 }
 
+.differentials{
+    width: 75%;
+    align-self: center;
+    
+}
+
+.differentials .title{
+    padding: 0 1.5rem;
+    font-weight: 600;
+    color:#1E2428;
+    font-size: 1.85rem;
+    text-align: left;
+    line-height: 3rem;
+}
+
+.differentials .divider{
+    width: 8rem;
+    margin-left: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.differentials-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    line-height: 1.8rem;
+    padding: 0 2rem; 
+}
+
+.differentials-cards h3{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.differentials-cards img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.diff-cards-item{
+    padding: 20px;
+}
