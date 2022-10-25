@@ -3,5 +3,6 @@ header{
 }
 
 header .navigation{
-    background-color: #1d4e89c8;
+    background: rgb(26,89,119);
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%);
 }

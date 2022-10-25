@@ -1,3 +1,16 @@
+body{
+    font-family: "Montserrat", Sans-serif;
+    background-color: #F7FAFB;
+}
+
+body a, a:hover {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------- CSS DA HEADER --------------------*/
+
 header {
     display: flex;
     width: 100%;
@@ -5,8 +18,7 @@ header {
     background-size: cover;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
+    font-family: "Montserrat", Sans-serif;
     font-size: large;
     color: white;
 }
@@ -17,42 +29,123 @@ header {
 }
 
 .carousel-indicators li {
+    position: relative;
+    bottom: 55px;
     border-radius: 12px;
     width: 12px;
     height: 12px;
     background-color: #1d4e8989;
-    margin: 15px;
+    margin: 10px;
 }
 
-.btn{
-font-size: 25px;
-color: #1c558e;
-background-color: #1c558e00;
-padding: 10px 60px;
-border: solid #0066cc 1px;
-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-border-radius: 50px;
-transition : 700ms;
-transform: translateY(0);
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
+
+@keyframes fadeAndScale {
+    0% {
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+
+    70% {
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1,1,1);
+    }
 }
 
-.btn:hover{
-transition : 700ms;
-padding: 10px 60px;
-transform : translateY(-12px);
-background-color: #1c558ec1;
-color: #ffffff;
-border: solid 1px #0066cc;
+@keyframes goingUp {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* $el .x-text-content-text-primary {
+    animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
+    transform-origin: center bottom;
+} */
+
+
+
+.slgn, .slgn-str{
+    position: absolute;
+    left: 18.4rem;
+    animation: goingUp 1s;
+    font-size: 3rem;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.slgn-str{
+    top: 18rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+.slgn{
+    top: 21.3rem;
+    font-weight: 300;
+    line-height: 1.3rem;
+    letter-spacing: -3px;
+}
+
+
+.btn-consulta, .btn-contato{
+    position: absolute;
+    top: 26.5rem;
+
+    animation: fadeAndScale 1s cubic-bezier(.39,-1.05,.58,1.95);
+    animation-delay: -0.2s;
+    transform-origin: center bottom;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.btn-consulta{
+    left: 20rem;
+    color: #1C85BC;
+    background-color: #ffffff;
+    border-color: #ffffff00;
+}
+
+.btn-consulta:hover{
+    background-color: #1C85BC;
+    color: #ffffff;
+}
+
+.btn-contato{
+    left:32.5rem;
+    background-color: #ffffff18;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-contato:hover{
+    background-color: #ffffff;
+    color: #1C85BC
 }
 
 .logo {
     width: 249.5px;
     height: 83px;
 }
+
+
 
 header .navigation {
     position: absolute;
@@ -87,29 +180,104 @@ header .info a, .info span {
 nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     height: 100px;
-    align-items: center;
-    
+    align-items: center;    
 }
+
 
 nav .paginas {
     padding-left: 60px;
     margin-left: 10px;
 }
 
-nav a,
-nav a:hover {
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.55rem;
-    font-weight: 500;
-}
-
-
 
 /* =============================== 
 como aplicar borda na info
 =================================*/
+
+
+/* -------------------- CSS DA MAIN --------------------*/
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card-info{
+    position: absolute;
+    top: 40rem;
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    animation: goingUp 1s;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    padding: 1.5rem;
+    font-size: 14px;
+    color: #42474c;
+    line-height: 22.4px;
+    font-weight: 500;
+
+}
+.card-img{
+    width: 300px;
+    height: 200px;
+}
+
+.card-item > h3{
+    font-weight: 600;
+    color:#1C85BC;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.hr-func{
+    border-bottom: 7px solid #6cc8df ;
+}
+
+.func{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.hours{
+    color: #2a93c9;
+    font-weight: 600;
+}
+
+.google-map{
+    border-bottom: 7px solid #56B0D2 ;
+
+}
+
+.ctt-emergencia{
+    border-bottom: 7px solid #2a88c9 ;
+}
+
+.ctt-emergencia a, .ctt-emergencia a:hover{
+    display: flex;
+    color: #1a5977;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1
+}
+.emergency-contact{
+    display: flex;
+    margin: 0 auto;
+}
+
+.phone-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
