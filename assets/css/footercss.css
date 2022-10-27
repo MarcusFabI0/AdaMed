@@ -1,0 +1,93 @@
+
+/* -------------------- CSS DO FOOTER --------------------*/
+
+footer{
+    height: 500px;
+    background-color: #919BA6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-info{
+    display: flex;
+    line-height: 1.8rem;
+    padding: 0 4rem; 
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-info .ada-logo{
+    width: 187.125px;
+    height: 60.25px;
+    margin-bottom: 10px;
+}
+
+.footer-info .title{
+    font-weight: 700;
+    color:#ffffff;
+    font-size: 0.95rem;
+    margin-right: 15rem;
+    line-height: 2rem;
+}
+
+.footer-info .divider{
+    width: 5rem;
+    margin-left: 0.2rem;
+    margin-bottom: 2.05rem;
+    
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: 400;
+    width: 21rem;
+    margin-top: 4rem;
+}
+
+.footer-item-content{
+    height: 180px;
+}
+
+.socials .fa-brands{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footer-item-content a{
+    padding:0;
+}
+
+.footer-item-content a:hover{
+    color: #f0eee9
+}
+
+.footer-item-content .socials a:hover{
+    color: #8ADBF5;
+}
+
+td{
+    padding-right: 15px;
+}
+
+.copyright{
+    display: flex;
+    background-color: #8F98A3;
+    margin-bottom: 0;
+    margin-top: 5em;
+    color: white;
+    width:100%;
+    font-size: small;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}

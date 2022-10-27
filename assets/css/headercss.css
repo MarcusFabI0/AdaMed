@@ -1,0 +1,26 @@
+html {
+    margin: 0
+}
+header{
+    background: none;
+    height: 30vh;
+}
+
+header .navigation{
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%);
+}
+
+header .header-expand{
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%);
+    width: 100%;
+    padding: 2rem 10rem;
+}
+
+.header-expand > h1 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.header-expand h3 {
+    font-weight: 300;
+}

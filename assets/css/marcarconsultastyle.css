@@ -1,8 +1,119 @@
+html {
+    margin: 0
+}
 header{
     background: none;
+    height: 30vh;
 }
 
 header .navigation{
-    background: rgb(26,89,119);
     background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%);
+}
+
+header .header-expand{
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%);
+    width: 100%;
+    padding: 0.8rem 10rem;
+}
+
+.header-expand > h1 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.header-expand h3 {
+    font-weight: 300;
+}
+
+main{
+    clear:both;
+}
+.main-row{
+    display: flex;
+    max-width: 100rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-row img{
+    width: 47.5rem;
+    height: 35rem;
+}
+
+.formulario{
+    background-color: #56B0D2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.marcar-consulta{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.Formulario_conectado_com_planilha_google{
+    border-radius: 10px;
+    height: 30rem;
+    margin: 0 5rem;
+    align-self: center;
+    color: white;
+    font-weight: 300;
+    height: auto;
+}
+
+.Formulario_conectado_com_planilha_google label{
+    font-weight: 500;
+}
+
+.Formulario_conectado_com_planilha_google h3{
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+#profissional, #especialidade, #nome, #telefone, #date, #horario{
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+.google-map{
+    margin: auto;
+}
+
+
+input[type="text"], input[type="tel"], input[type="date"], input[type="time"], select, option, ::placeholder
+{
+    background: transparent;
+    border: none;
+    color:rgba(66, 71, 76, 0.456)
+
+}
+
+input[type="text"], input[type="tel"], input[type="date"], input[type="time"], select
+{
+    color:rgba(255, 255, 255, 0.771);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.518);
+}
+  
+
+input[type="submit"]{
+    background: white;
+    border: none;
+    color: #0a86b3 ;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 500;
+}
+
+
+input[type="submit"]:hover, input[type="submit"]:focus{
+    background: rgb(22,103,154);
+    background: linear-gradient(100deg, rgba(22,103,154,1) 100%, rgba(4,166,194,1) 100%);
+    color: white;
+    cursor: pointer;
+
 }
