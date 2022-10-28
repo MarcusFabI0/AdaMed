@@ -1,38 +1,37 @@
 html {
     margin: 0
 }
+
 header{
-    background: none;
     height: 30vh;
 }
 
-header .navigation{
-    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%);
+header, .navigation{
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
 }
 
 header .header-expand{
-    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%);
     width: 100%;
     padding: 0.8rem 10rem;
 }
 
 .header-expand > h1 {
+    font-family: 'Montserrat' sans-serif;
     font-size: 1.8rem;
     padding-bottom: 1rem;
+    font-weight: 700;
 }
 
 .header-expand h3 {
     font-weight: 300;
 }
 
-main{
-    clear:both;
-}
 .main-row{
     display: flex;
-    max-width: 100rem;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 100%;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: larger;
 }
 
 .main-row img{
@@ -40,21 +39,20 @@ main{
     height: 35rem;
 }
 
+.google-map{
+    margin: auto;
+}
+
 .formulario{
     background-color: #56B0D2;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .marcar-consulta{
     display: flex;
     flex-direction: column;
-    font-weight: 500;
-    font-size: larger;
 }
 
 .Formulario_conectado_com_planilha_google{
-    border-radius: 10px;
     height: 30rem;
     margin: 0 5rem;
     align-self: center;
@@ -63,37 +61,30 @@ main{
     height: auto;
 }
 
-.Formulario_conectado_com_planilha_google label{
-    font-weight: 500;
-}
-
 .Formulario_conectado_com_planilha_google h3{
     font-size: 1.5rem;
     padding: 0.8rem;
     font-weight: 700;
     text-align: center;
-    color: white;
 }
+
+.Formulario_conectado_com_planilha_google label{
+    font-weight: 500;
+}
+
 
 #profissional, #especialidade, #nome, #telefone, #date, #horario{
     margin-bottom: 1rem;
     margin-top: 0.2rem;
 }
 
-.google-map{
-    margin: auto;
-}
-
-
 input[type="text"], input[type="tel"], input[type="date"], input[type="time"], select, option, ::placeholder
 {
     background: transparent;
     border: none;
-    color:rgba(66, 71, 76, 0.456)
-
 }
 
-input[type="text"], input[type="tel"], input[type="date"], input[type="time"], select
+input[type="text"], input[type="tel"], input[type="date"], input[type="time"], select, option
 {
     color:rgba(255, 255, 255, 0.771);
     border-bottom: 1px solid rgba(255, 255, 255, 0.518);
@@ -116,4 +107,123 @@ input[type="submit"]:hover, input[type="submit"]:focus{
     color: white;
     cursor: pointer;
 
+}
+
+
+/* ------------------ PARA TABLET ------------------ */
+@media(max-width: 768px){
+
+    header{
+        height: 50vh;
+    }
+    
+    header .navigation{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+    }
+
+    header .info{
+        display: flex;
+        flex-direction: column;
+        height: 18vh;
+    }
+
+    .info > span {
+        padding: 20px;
+    }
+
+    nav {
+        position: absolute;
+        top: 20vh;
+        height: 15vh;
+    }
+
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu > .paginas{
+        margin: auto;
+        padding: 10px;
+    }
+
+    header .header-expand{
+        position: absolute;
+        top: 35vh;
+        margin-top: 2rem;
+        padding-left: 4.5rem;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        font-size: 19px;
+        position: absolute;
+        top: 50vh;
+    }
+
+    main > .formulario{
+        position: absolute;
+        top: 50vh;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .Formulario_conectado_com_planilha_google{
+        margin: auto;
+    }
+
+    .marcar-consulta{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 30px;
+    }
+
+    main > .main-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-row > .google-map{
+        position: absolute;
+        top: 120vh;
+        width: 100%;
+        height: 60vh;
+    }
+    .main-row .appointment-nurse{
+        display: none;
+    }
+
+    .main-row .waiting-room{
+        width: 100%;
+    }
+
+    footer{
+        height: auto;
+        position: absolute;
+        top: 230vh;
+    }
+
+    .footer-info{
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-item{
+        align-self: center;
+        align-items: center;
+        width: 60vh;
+    }
+
+    .footer-item > .title{
+        padding: 0;
+        margin: auto;
+    }
 }

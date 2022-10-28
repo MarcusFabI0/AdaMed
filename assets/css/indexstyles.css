@@ -524,3 +524,203 @@ td{
     align-items: center;
     justify-content: center;
 } 
+
+/* --------------- TABLET --------------- */
+
+@media(max-width: 768px){
+
+    p, span{
+        font-size: 18px;
+    }
+
+    header{
+        height: 40vh;
+        background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
+    }
+    
+    header .navigation{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 40vh;
+    }
+
+    header .info{
+        display: flex;
+        flex-direction: column;
+        height: 18vh;
+    }
+
+    .info > span {
+        padding: 20px;
+    }
+
+    nav {
+        position: absolute;
+        top: 20vh;
+        height: 15vh;
+    }
+
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .menu > .paginas{
+        margin: auto;
+        padding: 10px;
+    }
+
+    
+    #carouselExampleIndicators{
+        position: absolute;
+        top: 40vh;
+    }
+    
+
+    .slgn, .slgn-str{
+        position: absolute;
+        left: 1.4rem;
+    }
+    
+    .slgn-str{
+        position: absolute;
+        top: 3vh;
+    }
+    
+    .slgn{
+        position: absolute;
+        top: 10vh;
+        font-weight: 300;
+        line-height: 1.3rem;
+        letter-spacing: -3px;
+    }
+    
+    
+    .btn-consulta, .btn-contato{
+        position: absolute;
+        top: 15vh;
+        font-size: 18px;
+    }
+
+    .btn-consulta{
+        left: 1.5rem;
+    }
+
+    .btn-contato{
+        left: 20rem;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80vh;
+        width: 100%;        
+    }
+
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        align-items: center;
+        height: 150vh;
+    }
+
+    .card-img{
+        margin-top: 30px
+    }
+
+    .card-item > h3{
+        font-size: 30px;
+        padding-bottom: 10px;
+
+    }
+
+    .card-item > iframe{
+        width: 432px;
+    }
+
+    .differentials{
+        position: relative;
+        top: 160vh;
+    }
+
+    .differentials-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .departments{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 260vh;
+    }
+
+    .dep-cards{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dep-item > h3{
+        font-size: 30px;
+    }
+
+    .dep-item img{
+        width: 20vh;
+        height: auto;
+    }
+
+    .planos{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        position: absolute;
+        top: 730vh;
+        width: 75%;
+        height: 130vh;
+    }
+
+    .planos-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planos-cards img{
+        width: 20vh;
+        height: auto;
+    }
+
+
+    footer{
+        height: auto;
+        position: absolute;
+        top: 880vh;
+    }
+
+    .footer-info{
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-item{
+        align-self: center;
+        align-items: center;
+        width: 60vh;
+    }
+
+    .footer-item > .title{
+        padding: 0;
+        margin: auto;
+    }
+
+}
