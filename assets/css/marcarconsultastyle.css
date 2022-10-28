@@ -15,6 +15,12 @@ header .header-expand{
     padding: 0.8rem 10rem;
 }
 
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
 .header-expand > h1 {
     font-family: 'Montserrat' sans-serif;
     font-size: 1.8rem;
@@ -27,16 +33,15 @@ header .header-expand{
 }
 
 .main-row{
-    display: flex;
-    max-width: 100%;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     font-weight: 500;
     font-size: larger;
 }
 
 .main-row img{
-    width: 47.5rem;
-    height: 35rem;
+    width: 100%;
+    height: 100%;
 }
 
 .google-map{
@@ -53,12 +58,9 @@ header .header-expand{
 }
 
 .Formulario_conectado_com_planilha_google{
-    height: 30rem;
-    margin: 0 5rem;
-    align-self: center;
+    margin: 2rem auto;
     color: white;
     font-weight: 300;
-    height: auto;
 }
 
 .Formulario_conectado_com_planilha_google h3{
@@ -226,4 +228,12 @@ input[type="submit"]:hover, input[type="submit"]:focus{
         padding: 0;
         margin: auto;
     }
+   
+        
+
+}
+
+@media(max-width: 480px) {
+
+
 }
