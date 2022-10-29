@@ -148,7 +148,10 @@ header {
     height: 83px;
 }
 
+header{
+    background-color: #c5c6c64c !important;
 
+}
 
 header .navigation {
     position: absolute;
@@ -158,7 +161,7 @@ header .navigation {
     flex-wrap: wrap;
     align-items: center;
     width: 100vw;
-    background-color: #c5c6c64c;
+    background-color: #c5c6c64c !important;
     height: 150px;
 }
 

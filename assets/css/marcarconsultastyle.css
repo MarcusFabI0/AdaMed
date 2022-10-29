@@ -9,6 +9,88 @@ html {
 }
 
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0px !important;
+    font-weight: 300;
+    width: 100%;
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
+
+}
+
+.info, .navbar, .header-expand {
+    width: 80% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.navbar{
+    padding: 0 !important;
+}
+
+.header-expand{
+    flex-direction: column;
+}
+
+.info, .info a, .info a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 15px;
+    color: white;
+    width: 100%;
+} 
+
+.logo{
+    height: 12vh;
+}
+header{
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
+    padding: 0 10%;
+    color: white;
+}
+
+
+nav .navbar-nav li a{
+    color: white !important;
+    padding-left: 1rem !important;
+    margin-left: 3rem !important;
+    font-size: 1.15rem !important;
+    font-weight: 400;
+}
+
+header .header-expand{
+    padding: 1rem;
+
+}
+
+.header-expand > h1 {
+    font-family: 'Montserrat' sans-serif;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+} 
+
+
+
+.header-expand h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.5;
+    opacity: 0.9;
+}
+
+
 
 main {
     display: grid;
@@ -100,52 +182,24 @@ input[type="submit"]:hover, input[type="submit"]:focus{
 }
 
 
-/* ------------------ PARA TABLET ------------------
-@media(max-width: 768px){
-
-    header{
-        height: 50vh;
+@media (max-width: 990px){
+    .info{
+        flex-direction: column;
+        align-items: center;
     }
+
+    .info span {
+        padding: 10px
+    }
+}
+
+
+
+/* ------------------ PARA TABLET ------------------*/
+@media(max-width: 990px){
     
-    header .navigation{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-    }
-
-    header .info{
-        display: flex;
-        flex-direction: column;
-        height: 18vh;
-    }
-
-    .info > span {
-        padding: 20px;
-    }
-
-    nav {
-        position: absolute;
-        top: 20vh;
-        height: 15vh;
-    }
-
-    .menu{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu > .paginas{
-        margin: auto;
-        padding: 10px;
-    }
-
-    header .header-expand{
-        position: absolute;
-        top: 35vh;
-        margin-top: 2rem;
-        padding-left: 4.5rem;
+    header{
+        z-index: 4;
     }
 
     main{
@@ -154,6 +208,7 @@ input[type="submit"]:hover, input[type="submit"]:focus{
         font-size: 19px;
         position: absolute;
         top: 50vh;
+        width: 100%;
     }
 
     main > .formulario{
@@ -217,8 +272,8 @@ input[type="submit"]:hover, input[type="submit"]:focus{
         margin: auto;
     }
    
-        
+         
 
-}
+} 
 
- */
+ 
