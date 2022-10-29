@@ -2,18 +2,12 @@ html {
     margin: 0
 }
 
-header{
-    height: 30vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header, .navigation{
-    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
-}
-
-header .header-expand{
-    width: 100%;
-    padding: 0.8rem 10rem;
-}
 
 
 main {
@@ -21,16 +15,7 @@ main {
     grid-template-rows: 1fr 1fr;
 }
 
-.header-expand > h1 {
-    font-family: 'Montserrat' sans-serif;
-    font-size: 1.8rem;
-    padding-bottom: 1rem;
-    font-weight: 700;
-}
 
-.header-expand h3 {
-    font-weight: 300;
-}
 
 .main-row{
     display: grid;
@@ -61,6 +46,8 @@ main {
     margin: 2rem auto;
     color: white;
     font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+
 }
 
 .Formulario_conectado_com_planilha_google h3{
@@ -68,6 +55,7 @@ main {
     padding: 0.8rem;
     font-weight: 700;
     text-align: center;
+
 }
 
 .Formulario_conectado_com_planilha_google label{
@@ -112,7 +100,7 @@ input[type="submit"]:hover, input[type="submit"]:focus{
 }
 
 
-/* ------------------ PARA TABLET ------------------ */
+/* ------------------ PARA TABLET ------------------
 @media(max-width: 768px){
 
     header{
@@ -233,7 +221,4 @@ input[type="submit"]:hover, input[type="submit"]:focus{
 
 }
 
-@media(max-width: 480px) {
-
-
-}
+ */

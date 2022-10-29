@@ -9,6 +9,12 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer a, footer a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .footer-info{
