@@ -48,6 +48,7 @@ header{
     font-weight: 300;
     text-decoration: none;
     padding-top: 15px;
+    padding-bottom: 15px;
     color: white;
     width: 100%;
 } 
@@ -243,33 +244,6 @@ input[type="submit"]:hover, input[type="submit"]:focus{
     .marcar-consulta{
         justify-content: space-evenly;
         height: 70vh;
-    }
-
-    footer{
-        margin-top: -65vh;
-        height: 1500px;
-        position: static;
-    }
-
-    .footer-info{
-        font-size: 19px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-item{
-        align-self: center;
-        align-items: center;
-        width: 100vw;
-    }
-
-    .footer-item > .title{
-        padding: 0;
-        margin: auto;
-    }      
-    
-    .footer-item-content-text{
-        width: auto;
     }
 
 } 

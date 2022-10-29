@@ -97,3 +97,33 @@ td{
     align-items: center;
     justify-content: center;
 }
+
+@media(max-width: 1200px){
+    
+    footer{
+        margin-top: -65vh;
+        height: 1500px;
+        position: static;
+    }
+
+    .footer-info{
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-item{
+        align-self: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .footer-item > .title{
+        padding: 0;
+        margin: auto;
+    }      
+    
+    .footer-item-content-text{
+        width: auto;
+    }
+}

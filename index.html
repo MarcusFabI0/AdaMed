@@ -26,7 +26,6 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/teste.css">
-    <link rel="stylesheet" href="assets/css/headercss.css">
     <link rel="stylesheet" href="assets/css/footercss.css">
     <link rel="stylesheet" href="assets/css/indexstyles.css">
 
@@ -37,7 +36,37 @@
     <!-- ********************* HEADER *********************-->
 
     <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+       <section class="navigation">
+            <div class="info">
+                <span><a href="https://goo.gl/maps/XBwb1kHv5Dy4VFg8A" target="_blank">Localização: Av. Paulista, 2100 -
+                        São Paulo - SP</a></span>
+                <span>Email: info@adamed.com</span>
+                <span>Emergências: 0800 123 456</span>
+            </div>
+                
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <!-- Brand -->
+                <img src="assets/images/ADA.png" alt="logo" class="logo navbar-brand">
+            
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nossaequipe.html">Nossa equipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="marcarconsulta.html">Marcar consulta</a></li>
+                    <li class="nav-item contact"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+                </div>
+            </nav>
+       </section>
+
+       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -67,23 +96,8 @@
                 </div>
             </div>
         </div>
-        <div class="navigation">
-            <div class="info">
-                <span><a href="https://goo.gl/maps/XBwb1kHv5Dy4VFg8A" target="_blank">Localização:  Av. Paulista, 2100 - São Paulo - SP</a></span>
-                <span>Email: info@adamed.com</span>
 
-                <span>Emergências: 0800 123 456</span>
-            </div>
-            <nav>
-                <img src="assets/images/ADA.png" type="image/png" alt="logo" class="logo">
-                <div class="menu">
-                    <span class="paginas"><a href="index.html">Home</a></span>
-                    <span class="paginas"><a href="nossaequipe.html">Nossa equipe</a></span>
-                    <span class="paginas"><a href="marcarconsulta.html">Marcar consulta</a> </span>
-                    <span class="paginas"><a href="contato.html">Contato</a></span>
-                </div>
-            </nav>
-        </div>
+        <img src="assets/images/doctor3.jpg" class="img-mobile">
     </header>
 
 
@@ -93,7 +107,7 @@
     <!-- ********************* MAIN *********************-->
 
     <main>
-        <div class="card-info">
+        <section class="card-info">
             <div class="card-item hr-func">
                 <h3>Horário de funcionamento</h3>
                 <div class="func">
@@ -124,7 +138,7 @@
                 <img src="assets/images/img-emergencia.jpg" alt="" class="card-img">
             </div>
 
-        </div>
+        </section>
 
         <section class="differentials">
             <h3 class="title">Diferenciais</h3>

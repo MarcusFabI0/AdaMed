@@ -3,12 +3,10 @@ html, body{
     background-color: #F7FAFB;
     max-width: 100%;
     overflow-x: hidden;
-
+    margin: 0;
 }
 
 body a, a:hover {
-    padding: 10px;
-    text-decoration: none;
     color: white;
 }
 
@@ -16,17 +14,64 @@ body a, a:hover {
 
 header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0px !important;
+    font-weight: 300;
     width: 100vw;
-    height: 118vh;
     background-size: cover;
     justify-content: space-around;
-    flex-wrap: wrap;
-    font-family: "Montserrat", Sans-serif;
-    font-size: large;
     color: white;
 }
 
+.navigation{
+    z-index: 3;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #c5c6c64c;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.5vh;
+}
+
+.info{
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+
+.info, .navbar {
+    width: 80% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.navbar{
+    padding: 0 !important;
+    padding-bottom: 1px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.492) !important;
+}
+
+.logo{
+    height: 12vh;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+    padding-left: 1rem !important;
+    margin-left: 3rem !important;
+    font-size: 1.15rem !important;
+    font-weight: 400;
+}
+
+
 #carouselExampleIndicators{
+    z-index: 1;
     width: 100vw;
     height: fit-content;
 }
@@ -70,12 +115,6 @@ header {
 		transform: translateY(0);
 	}
 }
-
-/* $el .x-text-content-text-primary {
-    animation: fadeAndScale 2s cubic-bezier(.39,-1.05,.58,1.95);
-    transform-origin: center bottom;
-} */
-
 
 
 .slgn, .slgn-str{
@@ -143,66 +182,9 @@ header {
     color: #1C85BC
 }
 
-.logo {
-    width: 249.5px;
-    height: 83px;
+.img-mobile{
+    display: none;
 }
-
-header{
-    background-color: #c5c6c64c !important;
-
-}
-
-header .navigation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100vw;
-    background-color: #c5c6c64c !important;
-    height: 150px;
-}
-
-header .info {
-    display: flex;
-    justify-content: space-around;
-    height: 5vh;
-    width: 100vw;
-    align-items: center;
-    margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 62px;
-}
-
-header .info a, .info span {
-    padding-top: 10px;
-    font-weight: 350;
-    text-decoration: none;
-    color: white;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100vw;
-    height: 100px;
-    align-items: center;    
-}
-
-
-nav .paginas {
-    padding-left: 60px;
-    margin-left: 10px;
-}
-
-
-/* =============================== 
-como aplicar borda na info
-=================================*/
 
 
 /* -------------------- CSS DA MAIN --------------------*/
@@ -214,8 +196,9 @@ main {
 }
 
 .card-info{
+    z-index: 4;
     position: relative;
-    bottom: 15rem;
+    bottom: 3rem;
     width: 75vw;
     height: auto;
     display: flex;
@@ -294,11 +277,9 @@ main {
 }
 
 .differentials{
-    position: relative;
-    bottom: 10rem;
     width: 75vw;
     align-self: center;
-    margin-bottom: 3rem;
+    padding: 1rem 0;
 }
 
 .differentials .title{
@@ -344,11 +325,10 @@ main {
 }
 
 .departments{
-    position: relative;
-    bottom: 10rem;
     width: 75vw;
     align-self: center;
-    margin: 2rem;
+    margin: 3rem 0;
+    padding: 1rem 0;   
 }
 
 .departments .divider{
@@ -405,7 +385,8 @@ main {
 }
 
 .planos{
-    margin: auto;
+    margin: 7rem auto 0 auto;
+    padding: 1rem 0;
     width: 75vw;
     position: relative;
     bottom: 7rem;
@@ -435,168 +416,123 @@ main {
     margin: 1rem;
     border-radius: 20px;
 }
-/*  -------------------- CSS DO FOOTER -------------------- */
 
-footer{
-    height: 500px;
-    background-color: #919BA6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
+
+@media(max-width: 900px){
+
+    #carouselExampleIndicators{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+        position: relative; /* allows repositioning */
+        height: 65vh;
+        top: 31.20vh;
+        left: 100%; /* move the whole width of the image to the right */
+        margin-left: -200%; /* magic! */
+        
+    }
+
+    .card-item{
+        width: 100%;
+    }
+ 
+    .google-map iframe{
+        width: 100%;
+
+    }
+
+    .differentials{
+        margin-top: 10vh;
+    }
+
+    .planos{
+        margin-top: -5vh;
+    }
+
+    .differentials, .departments, .planos{
+        bottom: 0;
+    }
+
+    .differentials > .title, .departments > .title, .planos > .title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #1D4E89;
+        border-bottom: 3px solid #1D4E89;
+        border-top: 3px solid #1D4E89;
+
+    }
+
+    .divider{
+        display: none;
+    }
+
+    footer{
+        position: absolute;
+        top: 1250vh;
+    }
 }
 
-.footer-info{
-    display: flex;
-    line-height: 1.8rem;
-    padding: 0 4rem; 
-    align-self: center;
-    justify-content: center;
-    width: 100%;
-}
 
-.footer-info .ada-logo{
-    width: 187.125px;
-    height: 60.25px;
-    margin-bottom: 10px;
-}
-
-.footer-info .title{
-    font-weight: 700;
-    color:#ffffff;
-    font-size: 0.95rem;
-    margin-right: 15rem;
-    line-height: 2rem;
-}
-
-.footer-info .divider{
-    width: 5rem;
-    margin-left: 0.2rem;
-    margin-bottom: 2.05rem;
-    
-}
-
-.footer-item{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
-    font-size: 14px;
-    color: #ffffff;
-    line-height: 30px;
-    font-weight: 400;
-    width: 21rem;
-    margin-top: 4rem;
-}
-
-.footer-item-content{
-    height: 180px;
-}
-
-.socials .fa-brands{
-    font-size: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-.footer-item-content a{
-    padding:0;
-}
-
-.footer-item-content a:hover{
-    color: #f0eee9
-}
-
-.footer-item-content .socials a:hover{
-    color: #8ADBF5;
-}
-
-td{
-    padding-right: 15px;
-}
-
-.copyright{
-    display: flex;
-    background-color: #8F98A3;
-    margin-bottom: 0;
-    margin-top: 5em;
-    color: white;
-    width:100%;
-    font-size: small;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-} 
-
-/* --------------- TABLET --------------- */
-
-@media(max-width: 768px){
+@media(max-width: 1200px){
 
     p, span{
         font-size: 18px;
     }
 
-    header{
-        height: 40vh;
-        background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
+    html, body {
+        height: 100%;
+        overflow-x: hidden;
     }
-    
-    header .navigation{
-        font-size: 18px;
-        display: flex;
+
+    .info{
         flex-direction: column;
-        position: absolute;
-        height: 40vh;
+        align-items: center;
+        padding: 10px 0;
     }
 
-    header .info{
-        display: flex;
-        flex-direction: column;
-        height: 18vh;
-    }
-
-    .info > span {
-        padding: 20px;
-    }
-
-    nav {
-        position: absolute;
-        top: 20vh;
-        height: 15vh;
-    }
-
-    .menu{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    .info span{
         padding: 10px;
+        font-size: 14px;
     }
 
-    .menu > .paginas{
-        margin: auto;
-        padding: 10px;
+    .navigation{
+        background-color: #1C85BC;
     }
 
-    
     #carouselExampleIndicators{
         position: absolute;
-        top: 40vh;
+        top: 31.20vh;
     }
-    
+
+    .carousel-inner{
+        height: 100% !important;
+        max-height: 60vh !important;
+    }
+
+    .carousel-item{
+        position: relative !important;
+    }
+
+    .carousel-indicators{
+        display: none;
+    }
 
     .slgn, .slgn-str{
         position: absolute;
-        left: 1.4rem;
+        left: 2.5rem;
     }
     
     .slgn-str{
         position: absolute;
-        top: 3vh;
+        top: 7vh;
     }
     
     .slgn{
         position: absolute;
-        top: 10vh;
+        top: 14vh;
         font-weight: 300;
         line-height: 1.3rem;
         letter-spacing: -3px;
@@ -605,16 +541,16 @@ td{
     
     .btn-consulta, .btn-contato{
         position: absolute;
-        top: 15vh;
-        font-size: 18px;
+        top: 22vh;
+        font-size: 15px;
     }
 
     .btn-consulta{
-        left: 1.5rem;
+        left: 2.5rem;
     }
 
     .btn-contato{
-        left: 20rem;
+        left: 18rem;
     }
 
 
@@ -622,27 +558,27 @@ td{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 80vh;
+        top: 91.20vh;
         width: 100%;        
     }
 
     .card-info{
+        position: static;
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 0;
         align-items: center;
-        height: 150vh;
+        height: auto;
     }
 
     .card-img{
-        margin-top: 30px
+        margin-top: 30px;
+        width: 90%;
+        height: auto;
     }
-
     .card-item > h3{
         font-size: 30px;
-        padding-bottom: 10px;
-
+        padding-bottom: 1.5rem;
     }
 
     .card-item > iframe{
@@ -651,7 +587,7 @@ td{
 
     .differentials{
         position: relative;
-        top: 160vh;
+        bottom: 10vh;
     }
 
     .differentials-cards{
@@ -660,10 +596,10 @@ td{
     }
     
     .departments{
+        position: relative;
+        bottom: 10vh;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 260vh;
     }
 
     .dep-cards{
@@ -685,8 +621,8 @@ td{
         display: flex;
         flex-direction: column;
         align-self: center;
-        position: absolute;
-        top: 730vh;
+        position: relative;
+        bottom: 25vh;
         width: 75%;
         height: 130vh;
     }
@@ -698,7 +634,7 @@ td{
     }
 
     .planos-cards img{
-        width: 20vh;
+        width: 30vh;
         height: auto;
     }
 
@@ -706,7 +642,7 @@ td{
     footer{
         height: auto;
         position: absolute;
-        top: 880vh;
+        top: 1180vh;
     }
 
     .footer-info{
@@ -724,6 +660,6 @@ td{
     .footer-item > .title{
         padding: 0;
         margin: auto;
-    }
+    } 
 
 }
