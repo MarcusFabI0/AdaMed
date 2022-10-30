@@ -43,6 +43,7 @@ header {
     font-weight: 300;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 } 
 
 .info, .navbar {
@@ -202,7 +203,7 @@ main {
     width: 75vw;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #ffffff;
     padding: 2rem 1rem 0rem 1rem;
     animation: goingUp 1s;
@@ -219,6 +220,7 @@ main {
     color: #42474c;
     line-height: 22.4px;
     font-weight: 500;
+    width: auto;
 }
 
 
@@ -252,7 +254,11 @@ main {
 
 .google-map{
     border-bottom: 7px solid #56B0D2 ;
+    width: 100%;
+}
 
+.embed-map{
+    margin: 0 auto;
 }
 
 .ctt-emergencia{
@@ -418,6 +424,49 @@ main {
 }
 
 
+@media(max-width: 500px){
+    
+    html, body {
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    main{
+        height: auto;
+    }
+    .card-info {
+        width: 100%;
+    }
+
+    .card-item img{
+        display: none;
+    }
+
+
+    .departments, .dep-item{
+        width: 100%;
+    }
+
+    .dep-cards h3{
+        font-size: 10px;
+    }
+
+    .planos{
+        padding-top: 40vh;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
 @media(max-width: 900px){
 
     #carouselExampleIndicators{
@@ -448,7 +497,6 @@ main {
     }
 
     .planos{
-        margin-top: -5vh;
     }
 
     .differentials, .departments, .planos{
@@ -562,33 +610,7 @@ main {
         width: 100%;        
     }
 
-    .card-info{
-        position: static;
-        margin-top: 10vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
 
-    .card-img{
-        margin-top: 30px;
-        width: 90%;
-        height: auto;
-    }
-    .card-item > h3{
-        font-size: 30px;
-        padding-bottom: 1.5rem;
-    }
-
-    .card-item > iframe{
-        width: 432px;
-    }
-
-    .differentials{
-        position: relative;
-        bottom: 10vh;
-    }
 
     .differentials-cards{
         display: flex;
@@ -596,8 +618,6 @@ main {
     }
     
     .departments{
-        position: relative;
-        bottom: 10vh;
         display: flex;
         flex-direction: column;
     }
@@ -622,7 +642,6 @@ main {
         flex-direction: column;
         align-self: center;
         position: relative;
-        bottom: 25vh;
         width: 75%;
         height: 130vh;
     }
@@ -638,11 +657,9 @@ main {
         height: auto;
     }
 
-
     footer{
-        height: auto;
         position: absolute;
-        top: 1180vh;
+        top: 1280vh
     }
 
     .footer-info{
@@ -661,5 +678,39 @@ main {
         padding: 0;
         margin: auto;
     } 
+
+}
+
+@media(max-width: 1350px){
+    .card-info{
+        position: static;
+        margin-top: -15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .card-item{
+        font-size: large;
+    }
+
+    .func{
+        justify-content: space-around;
+    }
+
+    .card-img{
+        margin-top: 30px;
+        width: 70%;
+        height: auto;
+    }
+    .card-item > h3{
+        font-size: 30px;
+        padding-bottom: 1.5rem;
+    }
+
+    .card-item > iframe{
+        width: 70% !important;
+    }
 
 }
