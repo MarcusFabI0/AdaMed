@@ -1,5 +1,5 @@
-/* -------------------- CSS DA HEADER --------------------*/
-header {
+
+header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,55 +8,51 @@ header {
     padding: 0px !important;
     font-weight: 300;
     width: 100%;
-    background: linear-gradient(100deg, rgba(26, 89, 119, 1) 15%, rgba(65, 152, 198, 1) 100%);
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
 
 }
 
-.info,
-.navbar,
-.header-expand {
+.info, .navbar, .header-expand {
     width: 80% !important;
     display: flex !important;
     justify-content: space-between !important;
 }
 
-.navbar {
+.navbar{
     padding: 0 !important;
 }
 
-.header-expand {
+.header-expand{
     flex-direction: column;
 }
 
-.info,
-.info a,
-.info a:hover {
+.info, .info a, .info a:hover{
     color: white;
     text-decoration: none;
 }
 
-.info {
+.info{
     display: flex;
+    padding-top: 15px;
     justify-content: space-between;
     font-weight: 300;
-    padding-top: 15px;
     text-decoration: none;
     color: white;
+    padding-bottom: 15px;
     width: 100%;
-}
+} 
 
-.logo {
+.logo{
     height: 12vh;
 }
-
-header {
-    background: linear-gradient(100deg, rgba(26, 89, 119, 1) 15%, rgba(65, 152, 198, 1) 100%);
+header{
+    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
     padding: 0 10%;
     color: white;
 }
 
 
-nav .navbar-nav li a {
+nav .navbar-nav li a{
     color: white !important;
     padding-left: 1rem !important;
     margin-left: 3rem !important;
@@ -64,23 +60,23 @@ nav .navbar-nav li a {
     font-weight: 400;
 }
 
-header .header-expand {
+header .header-expand{
     padding: 1rem;
 
 }
 
-.header-expand>h1 {
-    font-family: 'Montserrat' sans-serif;
+.header-expand > h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     padding-bottom: 1rem;
     font-weight: 700;
-}
+} 
+
 
 
 .header-expand h3 {
     font-weight: 300;
-    font-size: 1rem;
-    letter-spacing: 0.5;
+    font-size: 1.2rem;
     opacity: 0.9;
 }
 
@@ -106,7 +102,7 @@ main {
 
 .meet-team {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
 }
 
 .meet-team p {
@@ -121,9 +117,10 @@ main {
 }
 
 .intro {
-    padding-top: 65px;
-    padding-bottom: 60px;
-    padding-left: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto 2.5rem 30%;
+
 }
 
 .title {

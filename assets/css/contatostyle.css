@@ -252,8 +252,23 @@ main{
     padding: 0.5rem 0;
 }
 
+@media(max-width: 900px){
+    
+    .main-container{
+        width: 100%;
+    }
 
-@media (max-width: 990px){
+    .Formulario_conectado_com_planilha_google{
+        width: 100%;
+        background-color: #1586C0;
+    }
+    
+    .get-in-touch{
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 1200px){
     .info{
         flex-direction: column;
         align-items: center;
@@ -261,5 +276,70 @@ main{
 
     .info span {
         padding: 10px
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 10vh auto;
+    }
+
+    .intro-text{
+        margin: 0;
+        width: 80%;
+        padding: 10vh;
+    }
+
+    .intro-img, .intro-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card-info{
+        order: 1;
+    }
+
+    .Formulario_conectado_com_planilha_google{
+        order:2;
+    }
+
+    .hr-func{
+        font-size: 1.2rem;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .hr-func img{
+        display: none;
+    }
+
+    .days-hours-container{
+        justify-content: space-around;
+        padding-top: 2rem;
+    }
+
+    .embed-map{
+        height: 70vh;
+        margin-bottom: 5rem;
+    }
+
+    .get-in-touch{
+        height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    footer{
+        position: absolute;
+        top: 519vh
     }
 }
