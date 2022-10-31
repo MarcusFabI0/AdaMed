@@ -157,12 +157,15 @@ input[type="text"], input[type="tel"], input[type="date"], input[type="time"], s
     border: none;
 }
 
-input[type="text"], input[type="tel"], input[type="date"], input[type="time"], select, option
+input[type="text"], input[type="tel"], input[type="date"], input[type="time"], select
 {
     color:rgba(255, 255, 255, 0.771);
     border-bottom: 1px solid rgba(255, 255, 255, 0.518);
 }
-  
+
+option{
+    color:#0a86b3;
+    }
 
 input[type="submit"]{
     background: white;
