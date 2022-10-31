@@ -1,5 +1,5 @@
 /* -------------------- CSS DA HEADER --------------------*/
-header{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,30 +8,34 @@ header{
     padding: 0px !important;
     font-weight: 300;
     width: 100%;
-    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
+    background: linear-gradient(100deg, rgba(26, 89, 119, 1) 15%, rgba(65, 152, 198, 1) 100%);
 
 }
 
-.info, .navbar, .header-expand {
+.info,
+.navbar,
+.header-expand {
     width: 80% !important;
     display: flex !important;
     justify-content: space-between !important;
 }
 
-.navbar{
+.navbar {
     padding: 0 !important;
 }
 
-.header-expand{
+.header-expand {
     flex-direction: column;
 }
 
-.info, .info a, .info a:hover{
+.info,
+.info a,
+.info a:hover {
     color: white;
     text-decoration: none;
 }
 
-.info{
+.info {
     display: flex;
     justify-content: space-between;
     font-weight: 300;
@@ -39,19 +43,20 @@ header{
     text-decoration: none;
     color: white;
     width: 100%;
-} 
+}
 
-.logo{
+.logo {
     height: 12vh;
 }
-header{
-    background: linear-gradient(100deg, rgba(26,89,119,1) 15%, rgba(65,152,198,1) 100%); 
+
+header {
+    background: linear-gradient(100deg, rgba(26, 89, 119, 1) 15%, rgba(65, 152, 198, 1) 100%);
     padding: 0 10%;
     color: white;
 }
 
 
-nav .navbar-nav li a{
+nav .navbar-nav li a {
     color: white !important;
     padding-left: 1rem !important;
     margin-left: 3rem !important;
@@ -59,17 +64,17 @@ nav .navbar-nav li a{
     font-weight: 400;
 }
 
-header .header-expand{
+header .header-expand {
     padding: 1rem;
 
 }
 
-.header-expand > h1 {
+.header-expand>h1 {
     font-family: 'Montserrat' sans-serif;
     font-size: 1.6rem;
     padding-bottom: 1rem;
     font-weight: 700;
-} 
+}
 
 
 .header-expand h3 {
@@ -79,8 +84,8 @@ header .header-expand{
     opacity: 0.9;
 }
 
-@media (max-width: 768px){
-    .info{
+@media (max-width: 768px) {
+    .info {
         flex-direction: column;
         align-items: center;
     }
@@ -92,13 +97,19 @@ header .header-expand{
 
 /* -------------------- CSS DA MAIN --------------------*/
 
-.meet-team{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
-.meet-team p{
+.meet-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.meet-team p {
     color: #1e2428;
     font-family: "Montserrat", Sans-serif;
     font-size: 20px;
@@ -109,13 +120,13 @@ header .header-expand{
     margin: 49.5px 0;
 }
 
-.intro{
+.intro {
     padding-top: 65px;
     padding-bottom: 60px;
     padding-left: 40%;
 }
 
-.title{
+.title {
     color: #1e2428;
     font-family: "Montserrat", Sans-serif;
     font-size: 26px;
@@ -127,66 +138,151 @@ header .header-expand{
     letter-spacing: 0px;
 }
 
-.divider{
+.divider {
     width: 105px;
     height: 7px;
     margin-top: 10px;
 }
 
-
-.team .title{
-    padding-left: 15%;
-    margin-top: 5%;
+.team {
+    width: 70%;
+    padding: 6rem 0 4rem 0;
 }
 
-.team .divider{
-    padding-left: 6%;
+.team .divider {
+    width: 115px;
 }
 
-.professionals{
+.professionals {
     display: grid;
-    grid-template-columns: repeat(5,0fr);
+    grid-template-columns: repeat(5, 0fr);
     justify-content: center;
     grid-gap: 25px;
-    margin: 30px;
+    margin-bottom: 15rem;
 }
 
-.doc-photo{
+.professional-card {
+    padding-bottom: 3rem;
+}
+
+.doc-photo {
     width: 240px;
-    height:224px;
-
+    height: 252px;
+    border-radius: 3px;
 }
 
-.top-photo{
-    width: 932px;
-    height:476px;
+.top-photo {
+    width: 100%;
+    height: auto;
 }
 
-.doc-type{
+.doc-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.doc-info a{
+    text-decoration: none;
+}
+
+.doc-type {
     color: #B5B9BB;
     font-family: "Lato", Sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.5em;
     letter-spacing: 1px;
-    padding: 37px 30px 0px 20px;
-    margin: 0px 0px 0px 0px;
+    margin: 5px;
     align-self: flex-start;
     text-align: left;
 }
 
-.doc-name{
+.doc-name {
     font-family: "Lato", Sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.5em;
     letter-spacing: 0px;
-    margin: 0px 0px 0px 45px;
+    padding-left: 5px;
+    padding-bottom: 7px;
 }
 
-.elementor-icon-list-text,.elementor-icon-list-icon{
+.doc-phone-mail {
+    padding-left: 7px;
+}
+
+.icon-list-item a{
+    text-decoration: none;
+}
+
+.elementor-icon-list-text,
+.elementor-icon-list-icon{
     color: #b5b9bb;
     align-self: center;
-    padding-left: 5px;
+    padding-top: 5px;    
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.card:hover .details {
+    opacity: 1;
+    height: 100%;
+}
+
+.details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.details h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.details p {
+    font-family: "Montserrat", sans-serif;
+    margin: 2px 0;
+    font-size: 12px;
+    font-style: italic;
+    color: white;
+    padding: 8px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+.social-icons li {
+    margin: 0 10px;
+
+}
+
+.social-icons li a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.social-icons li a:hover {
+    color: #1c85bc;
 }
